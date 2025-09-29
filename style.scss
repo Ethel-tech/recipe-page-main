@@ -4,7 +4,7 @@
 }
 
 main {
-	font-family: "Outfit";
+	font-family: "Outfit" sans-serif;
 	background-color: hsl(30, 54%, 90%);
 	font-size: 14pt;
 	display: flex;
@@ -32,8 +32,8 @@ p {
 	padding: 2.5rem;
 	border-radius: 1rem;
 	background-color: hsl(0, 0%, 100%);
-	&-header {	
-		padding-bottom: 1rem;	
+	&-header {
+		padding-bottom: 1rem;
 		h1 {
 			margin: 1rem 0;
 			font-size: 24pt;
@@ -89,24 +89,23 @@ p {
 			font-weight: 600;
 		}
 	}
-	&-nutrition {		
+	&-nutrition {
 		padding: 1rem 0;
-		p{
+		p {
 			margin: 1rem 0;
 		}
 		table {
 			border-collapse: collapse;
 			width: 100%;
-			th,
 			td {
 				padding: 1rem 2rem;
 				text-align: left;
 				border-bottom: 1px solid #ddd;
 			}
-			th {
+			strong {
 				color: hsl(14, 45%, 36%);
 			}
-			.last-row{
+			.last-row {
 				border-bottom: none;
 			}
 		}
@@ -140,7 +139,8 @@ p {
 		&-instruction,
 		&-nutrition {
 			margin: 1rem;
-			ol, ul{
+			ol,
+			ul {
 				margin-left: 1.5rem;
 			}
 		}

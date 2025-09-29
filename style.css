@@ -4,7 +4,7 @@
 }
 
 main {
-  font-family: "Outfit";
+  font-family: "Outfit" sans-serif;
   background-color: hsl(30, 54%, 90%);
   font-size: 14pt;
   display: flex;
@@ -101,13 +101,12 @@ p {
   border-collapse: collapse;
   width: 100%;
 }
-.recipe-nutrition table th,
 .recipe-nutrition table td {
   padding: 1rem 2rem;
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
-.recipe-nutrition table th {
+.recipe-nutrition table strong {
   color: hsl(14, 45%, 36%);
 }
 .recipe-nutrition table .last-row {
@@ -136,7 +135,11 @@ p {
   .recipe-preparation, .recipe-ingredient, .recipe-instruction, .recipe-nutrition {
     margin: 1rem;
   }
-  .recipe-preparation ol, .recipe-preparation ul, .recipe-ingredient ol, .recipe-ingredient ul, .recipe-instruction ol, .recipe-instruction ul, .recipe-nutrition ol, .recipe-nutrition ul {
+  .recipe-preparation ol,
+  .recipe-preparation ul, .recipe-ingredient ol,
+  .recipe-ingredient ul, .recipe-instruction ol,
+  .recipe-instruction ul, .recipe-nutrition ol,
+  .recipe-nutrition ul {
     margin-left: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
