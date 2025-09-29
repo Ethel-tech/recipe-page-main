@@ -1,0 +1,148 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+main {
+	font-family: "Outfit";
+	background-color: hsl(30, 54%, 90%);
+	font-size: 14pt;
+	display: flex;
+	justify-content: center;
+	padding: 5rem 0;
+	color: hsl(30, 10%, 34%);
+}
+
+h1,
+h3 {
+	font-family: "Young Serif";
+	line-height: 25pt;
+	font-weight: 400;
+}
+h3 {
+	font-size: 20pt;
+	color: hsl(14, 45%, 36%);
+}
+p {
+	font-size: 16px;
+}
+
+.recipe {
+	width: 42%;
+	padding: 2.5rem;
+	border-radius: 1rem;
+	background-color: hsl(0, 0%, 100%);
+	&-header {	
+		padding-bottom: 1rem;	
+		h1 {
+			margin: 1rem 0;
+			font-size: 24pt;
+			font-weight: 500;
+			color: hsl(24, 5%, 18%);
+		}
+		img {
+			width: 100%;
+			height: auto;
+			border-radius: 1rem;
+		}
+	}
+	&-preparation {
+		margin: 1rem 0;
+		padding: 2rem;
+		border-radius: 1rem;
+		background-color: hsl(330, 100%, 98%);
+		h3 {
+			font-family: "Outfit";
+			font-weight: 600;
+			color: hsl(332, 51%, 32%);
+		}
+		ul {
+			margin: 0.5rem 1rem;
+			li {
+				margin-top: 1rem;
+			}
+		}
+	}
+	&-ingredient {
+		padding: 1rem 0;
+		border-bottom: 1px solid hsl(30, 10%, 34%);
+
+		ul {
+			margin: 0 1rem 1rem;
+			li {
+				margin-top: 0.5rem;
+			}
+		}
+	}
+	&-instruction {
+		margin: 1rem 0;
+		padding: 1rem 0;
+		border-bottom: 1px solid hsl(30, 10%, 34%);
+		ol {
+			margin: 1rem 1.3rem;
+		}
+		li {
+			margin-bottom: 0.8rem;
+		}
+		ol li::marker {
+			color: hsl(14, 45%, 36%);
+			font-weight: 600;
+		}
+	}
+	&-nutrition {		
+		padding: 1rem 0;
+		p{
+			margin: 1rem 0;
+		}
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			th,
+			td {
+				padding: 1rem 2rem;
+				text-align: left;
+				border-bottom: 1px solid #ddd;
+			}
+			th {
+				color: hsl(14, 45%, 36%);
+			}
+			.last-row{
+				border-bottom: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	main {
+		display: block;
+		padding: 0;
+		background: none;
+	}
+	.recipe {
+		width: 100vw;
+		border-radius: 0;
+		padding: 0;
+
+		&-header {
+			img {
+				border-radius: 0;
+				margin-bottom: 1rem;
+			}
+			h1,
+			p {
+				margin: 1rem 2rem;
+			}
+		}
+
+		&-preparation,
+		&-ingredient,
+		&-instruction,
+		&-nutrition {
+			margin: 1rem;
+			ol, ul{
+				margin-left: 1.5rem;
+			}
+		}
+	}
+}
